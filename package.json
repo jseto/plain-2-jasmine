@@ -1,0 +1,16 @@
+{
+  "name": "plain-2-jasmine",
+  "main": "./lib/plain-2-jasmine",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": "plain-2-jasmine:toggle"
+  },
+  "repository": "https://github.com/atom/plain-2-jasmine",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
