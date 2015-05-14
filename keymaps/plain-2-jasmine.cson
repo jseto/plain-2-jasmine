@@ -8,4 +8,4 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
-  'ctrl-alt-o': 'plain-2-jasmine:toggle'
+  'ctrl-alt-2': 'plain-2-jasmine:toggle'
