@@ -3,6 +3,40 @@
 var insertJasmineSyntax = require('../lib/insert-jasmine-syntax.js');
 
 describe( 'insertJasmineSyntax module', function(){
+    it( 'should insert in unindent pattern', function(){
+        var buffer = [
+            'the first describe',
+            '    a description again',
+            '        another it',
+            '    a description',
+            '        an it',
+            'other main description',
+            '    a sub-description',
+            '        an it here'
+        ].join('\n');
+
+        var expectation = [
+            'describe( \'the first describe\', function() {',
+            '    describe( \'a description again\', function() {',
+            '        it( \'another it\', function() {',
+            '        });',
+            '    });',
+            '    describe( \'a description\', function() {',
+            '        it( \'an it\', function() {',
+            '        });',
+            '    });',
+            '});',
+            'describe( \'other main description\', function() {',
+            '    describe( \'a sub-description\', function() {',
+            '        it( \'an it here\', function() {',
+            '        });',
+            '    });',
+            '});'
+        ].join('\n');
+
+        expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
+    });
+
     it( 'should not include blank lines', function(){
         var buffer = [
             'a trivial buffer',
