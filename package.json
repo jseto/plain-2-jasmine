@@ -2,7 +2,7 @@
   "name": "plain-2-jasmine",
   "main": "./lib/plain-2-jasmine",
   "version": "0.0.1",
-  "description": "Wraps Jasmin syntax arround plain text specifications",
+  "description": "Wraps Jasmine syntax arround plain text specifications",
   "activationCommands": {
     "atom-workspace": "plain-2-jasmine:toggle"
   },

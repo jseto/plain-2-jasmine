@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle plain-2-jasmine'
+      'label': 'Plain text to Jasmine'
       'command': 'plain-2-jasmine:toggle'
     }
   ]
@@ -10,13 +10,8 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'plain-2-jasmine'
-      'submenu': [
-        {
-          'label': 'Toggle'
-          'command': 'plain-2-jasmine:toggle'
-        }
-      ]
+      'label': 'Plain text to Jasmine'
+      'command': 'plain-2-jasmine:toggle'
     ]
   }
 ]
