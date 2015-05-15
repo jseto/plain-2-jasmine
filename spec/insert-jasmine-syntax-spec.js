@@ -3,6 +3,25 @@
 var insertJasmineSyntax = require('../lib/insert-jasmine-syntax.js');
 
 describe( 'insertJasmineSyntax module', function(){
+    it( 'should not include blank lines', function(){
+        var buffer = [
+            'a trivial buffer',
+            '\tshould return proper jasmine',
+            ''
+        ].join('\n');
+
+        var expectation = [
+            'describe( \'a trivial buffer\', function() {',
+            '\tit( \'should return proper jasmine\', function() {',
+            '\t});',
+            '});'
+        ].join('\n');
+
+        expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
+        buffer += '    ';
+        expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
+    });
+
     it( 'should insert jasmine syntax in a trivial buffer with hard-tabs', function(){
         var buffer = [
             'a trivial buffer',
