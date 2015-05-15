@@ -3,6 +3,34 @@
 var insertJasmineSyntax = require('../lib/insert-jasmine-syntax.js');
 
 describe( 'insertJasmineSyntax module', function(){
+    it( 'should insert in unindent it after same level describe block pattern', function(){
+        var buffer = [
+            'the first describe',
+            '    a description again',
+            '        another it',
+            '    another it',
+            '    a description',
+            '        an it'
+        ].join('\n');
+
+        var expectation = [
+            'describe( \'the first describe\', function() {',
+            '    describe( \'a description again\', function() {',
+            '        it( \'another it\', function() {',
+            '        });',
+            '    });',
+            '    it( \'another it\', function() {',
+            '    });',
+            '    describe( \'a description\', function() {',
+            '        it( \'an it\', function() {',
+            '        });',
+            '    });',
+            '});'
+        ].join('\n');
+
+        expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
+    });
+
     it( 'should insert in unindent pattern', function(){
         var buffer = [
             'the first describe',
