@@ -79,9 +79,9 @@ Contributions are very appreciated. Just fork the [repo](https://github.com/jset
 and issue a pull request. Opening an issue about the planned contribution is advisable
 so we can discuss about it.
 
-Contributions should have test and description about the new or changed
+Contributions should have tests and description about the new or changed
 functionality.
 
 ## License ##
 
-Plain to Jasmine is distributed under the [MIT license](http://opensource.org/licenses/MIT)
+_Plain to Jasmine_ is distributed under the [MIT license](http://opensource.org/licenses/MIT)
