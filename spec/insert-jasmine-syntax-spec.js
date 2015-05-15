@@ -75,4 +75,38 @@ describe( 'insertJasmineSyntax module', function(){
 
         expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
     });
+
+    it( 'should insert in describe-it-it-decribe-it-describe-it-it pattern', function(){
+        var buffer = [
+            'the first describe',
+            '   should be followed by it',
+            '   should be followed by another it',
+            '   and an a description',
+            '       and other it',
+            '       a description again',
+            '           another it',
+            '           and one more it'
+        ].join('\n');
+
+        var expectation = [
+            'describe( \'the first describe\', function() {',
+            '   it( \'should be followed by it\', function() {',
+            '   });',
+            '   it( \'should be followed by another it\', function() {',
+            '   });',
+            '   describe( \'and an a description\', function() {',
+            '       it( \'and other it\', function() {',
+            '       });',
+            '       describe( \'a description again\', function() {',
+            '           it( \'another it\', function() {',
+            '           });',
+            '           it( \'and one more it\', function() {',
+            '           });',
+            '       });',
+            '   });',
+            '});'
+        ].join('\n');
+
+        expect( insertJasmineSyntax( buffer ).join('\n') ).toBe( expectation );
+    });
 });
