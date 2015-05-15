@@ -1,7 +1,7 @@
 {
   "name": "plain-2-jasmine",
   "main": "./lib/plain-2-jasmine",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Wraps Jasmine syntax arround plain text specifications",
   "activationCommands": {
     "atom-workspace": "plain-2-jasmine:toggle"
@@ -11,6 +11,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
