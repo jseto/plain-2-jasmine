@@ -2,11 +2,23 @@
 
 **Wraps Jasmine syntax around plain text specifications**
 
-_A package inspired by Chris Wheatley [Jasmine Scaffold](swirlycheetah/jasmine-scaffold-sublime-text)_
+_A package inspired by Chris Wheatley [Jasmine Scaffold](https://github.com/swirlycheetah/jasmine-scaffold-sublime-text)_
 
 This package helps to write Jasmine test by writing your specifications in
 plain human language. Once you have your specifications written, activate the
 package and it will insert all the Jasmine syntax.
+
+![plain-2-jasmine demo](plain-2-jasmine-demo.gif)
+
+### Install ###
+
+Use the Atom package manager, which can be found in the Settings view or run
+
+```
+apm install plain-2-jasmine
+```
+
+from the command line.
 
 ### Write your specifications ###
 
