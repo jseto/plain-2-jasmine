@@ -8,7 +8,7 @@ This package helps to write Jasmine test by writing your specifications in
 plain human language. Once you have your specifications written, activate the
 package and it will insert all the Jasmine syntax.
 
-![plain-2-jasmine demo](plain-2-jasmine-demo.gif)
+![plain-2-jasmine demo](https://raw.githubusercontent.com/jseto/plain-2-jasmine/master/plain-2-jasmine-demo.gif)
 
 ### Install ###
 
