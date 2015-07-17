@@ -76,7 +76,7 @@ describe( 'My awesome package', function() {
 });
 ```
 
-Or in Coffeescript:
+CoffeeScript is supported as well:
 
 ```coffee
 describe 'My awesome package', ->
@@ -92,7 +92,6 @@ describe 'My awesome package', ->
     describe 'when ctrl-shift-j pressed', ->
 
         it 'should insert Jasmine syntax in selected text', ->
-
 ```
 
 Enjoy your testings
