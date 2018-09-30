@@ -1,7 +1,7 @@
 {
   "name": "plain-2-jasmine",
   "main": "./lib/plain-2-jasmine",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Wraps Jasmine syntax arround plain text specifications",
   "activationCommands": {
     "atom-workspace": "plain-2-jasmine:toggle"
@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0"
+    "atom": ">=0.174.0 <3.0.0"
   },
   "dependencies": {},
   "readme": "# Plain to Jasmine Atom Package #\n\n**Wraps Jasmine syntax around plain text specifications**\n\n_A package inspired by Chris Wheatley [Jasmine Scaffold](https://github.com/swirlycheetah/jasmine-scaffold-sublime-text)_\n\nThis package helps to write Jasmine test by writing your specifications in\nplain human language. Once you have your specifications written, activate the\npackage and it will insert all the Jasmine syntax.\n\n![plain-2-jasmine demo](https://raw.githubusercontent.com/jseto/plain-2-jasmine/master/plain-2-jasmine-demo.gif)\n\n### Install ###\n\nUse the Atom package manager, which can be found in the Settings view or run\n\n```\napm install plain-2-jasmine\n```\n\nfrom the command line.\n\n### Write your specifications ###\n\nJust write your specifications in an indented manner in plain English or any\nother human language.\n\n\n```\nMy awesome package\n    when select Plain to Jasmine from context menu\n        should insert Jasmine syntax in selected text\n    when select Plain to Jasmine from package menu\n        should insert Jasmine syntax in selected text\n    when ctrl-shift-j pressed\n        should insert Jasmine syntax in selected text\n```\n\n### Activate the package ###\n\nSelect the text containing your specifications and use any of the following\nmethods to activate the package:\n\n- Chose `Plain to Jasmine` option under the Package main menu\n- Right click on the selected text and chose `Plain to Jasmine` option\n- <kbd>Ctrl</kbd> <kbd>Shift</kbd> + <kbd>J</kbd>\n- Select `Plain 2 Jasmine` from the command palette\n\n### Fill up your test code ###\n\nOnce the package is executed you will have inserted the Jasmine syntax code with\nyour specifications.\n\n```js\ndescribe( 'My awesome package', function() {\n\n    describe( 'when select Plain to Jasmine from context menu', function() {\n\n        it( 'should insert Jasmine syntax in selected text', function() {\n\n        });\n\n    });\n\n    describe( 'when select Plain to Jasmine from package menu', function() {\n\n        it( 'should insert Jasmine syntax in selected text', function() {\n\n        });\n\n    });\n\n    describe( 'when ctrl-shift-j pressed', function() {\n\n        it( 'should insert Jasmine syntax in selected text', function() {\n\n        });\n\n    });\n\n});\n```\n\nEnjoy your testings\n\n## Contribute ##\n\nIf you find a bug, please report it by opening a new [issue](https://github.com/jseto/plain-2-jasmine/issues)\n\nContributions are very appreciated. Just fork the [repo](https://github.com/jseto/plain-2-jasmine)\nand issue a pull request. Opening an issue about the planned contribution is advisable\nso we can discuss about it.\n\nContributions should have tests and description about the new or changed\nfunctionality.\n\n## License ##\n\n_Plain to Jasmine_ is distributed under the [MIT license](http://opensource.org/licenses/MIT)\n",
@@ -21,7 +21,7 @@
     "url": "https://github.com/jseto/plain-2-jasmine/issues"
   },
   "homepage": "https://github.com/jseto/plain-2-jasmine",
-  "_id": "plain-2-jasmine@0.1.2",
+  "_id": "plain-2-jasmine@0.2.2",
   "_shasum": "3eb8547e7dbefe1d5a2bcae44e2ce9ca47f3755c",
   "_resolved": "file:..\\d-115617-17900-13v4hlw\\package.tgz",
   "_from": "..\\d-115617-17900-13v4hlw\\package.tgz",
