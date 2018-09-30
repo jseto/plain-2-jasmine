@@ -14,14 +14,14 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
-			'    describe( \'\\na description again\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
+			'    describe( \'a description again\', ()=> {',
 			'        xit( \'another it\', ()=> {',
 			'        });',
 			'    });',
 			'    xit( \'another it\', ()=> {',
 			'    });',
-			'    describe( \'\\na description\', ()=> {',
+			'    describe( \'a description\', ()=> {',
 			'        xit( \'an it\', ()=> {',
 			'        });',
 			'    });',
@@ -44,18 +44,18 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
-			'    describe( \'\\na description again\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
+			'    describe( \'a description again\', ()=> {',
 			'        xit( \'another it\', ()=> {',
 			'        });',
 			'    });',
-			'    describe( \'\\na description\', ()=> {',
+			'    describe( \'a description\', ()=> {',
 			'        xit( \'an it\', ()=> {',
 			'        });',
 			'    });',
 			'});',
-			'describe( \'\\nother main description\', ()=> {',
-			'    describe( \'\\na sub-description\', ()=> {',
+			'describe( \'other main description\', ()=> {',
+			'    describe( \'a sub-description\', ()=> {',
 			'        xit( \'an it here\', ()=> {',
 			'        });',
 			'    });',
@@ -73,7 +73,7 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\na trivial buffer\', ()=> {',
+			'describe( \'a trivial buffer\', ()=> {',
 			'\txit( \'should return proper jasmine\', ()=> {',
 			'\t});',
 			'});'
@@ -91,7 +91,7 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\na trivial buffer\', ()=> {',
+			'describe( \'a trivial buffer\', ()=> {',
 			'\txit( \'should return proper jasmine\', ()=> {',
 			'\t});',
 			'});'
@@ -107,7 +107,7 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\na trivial buffer\', ()=> {',
+			'describe( \'a trivial buffer\', ()=> {',
 			'  xit( \'should return proper jasmine\', ()=> {',
 			'  });',
 			'});'
@@ -124,8 +124,8 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
-			'   describe( \'\\nshould be followed by a second describe\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
+			'   describe( \'should be followed by a second describe\', ()=> {',
 			'       xit( \'and an it function\', ()=> {',
 			'       });',
 			'   });',
@@ -144,10 +144,10 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
 			'   xit( \'should be followed by it\', ()=> {',
 			'   });',
-			'   describe( \'\\nand an a description\', ()=> {',
+			'   describe( \'and an a description\', ()=> {',
 			'       xit( \'and other it\', ()=> {',
 			'       });',
 			'   });',
@@ -170,15 +170,15 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
 			'   xit( \'should be followed by it\', ()=> {',
 			'   });',
 			'   xit( \'should be followed by another it\', ()=> {',
 			'   });',
-			'   describe( \'\\nand an a description\', ()=> {',
+			'   describe( \'and an a description\', ()=> {',
 			'       xit( \'and other it\', ()=> {',
 			'       });',
-			'       describe( \'\\na description again\', ()=> {',
+			'       describe( \'a description again\', ()=> {',
 			'           xit( \'another it\', ()=> {',
 			'           });',
 			'           xit( \'and one more it\', ()=> {',
@@ -202,14 +202,14 @@ describe( 'insertJasmineSyntax module', function(){
 		].join('\r\n');
 
 		var expectation = [
-			'describe( \'\\nthe first describe\', ()=> {',
-			'    describe( \'\\na description again\', ()=> {',
+			'describe( \'the first describe\', ()=> {',
+			'    describe( \'a description again\', ()=> {',
 			'        xit( \'another it\', ()=> {',
 			'        });',
 			'    });',
 			'    xit( \'another it\', ()=> {',
 			'    });',
-			'    describe( \'\\na description\', ()=> {',
+			'    describe( \'a description\', ()=> {',
 			'        xit( \'an it\', ()=> {',
 			'        });',
 			'    });',
